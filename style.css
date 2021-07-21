@@ -1,0 +1,79 @@
+:root{
+	--ci1: #180900;
+    --ci2: #fee9da;
+    --ci3: hsl(5deg 20% 15%);
+    --ci4:  hsl(5deg,60%,50%);
+    --ci5: #bcd1fe;
+    --link: var(--ci1);
+	--link: var(--ci1);
+	--link-hover: var(--ci4);
+	--btn-bg: var(--ci1);
+	--btn-bg-hover: var(--ci4);
+	--nav-link: var(--ci1);
+	--nav-hover: var(--ci2);
+	--bg-color: #fff;
+	--text-color: #333;
+	--box-shadow: 0 20px 25px -5px rgba(150,150,180,.1),0 10px 10px -5px rgba(150,150,180,.07);
+	--round: 5px;
+	--pmr-font: var(--font-ibm-loop);
+	--txt-font: var(--font-ibm-loop);
+}
+html {
+	scroll-behavior: smooth;
+	}
+	h1,h2,h3,h4,h5,h6{
+		font-weight: 700;
+	}
+	.text-shadow{
+		font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 42.5%;
+    z-index: -1;
+    color: #ef6a4e;
+    opacity: .1;
+	}
+	.mom{
+		position: relative;
+		z-index: 2;
+	}
+	.front{
+		z-index: 1;
+	}
+	.hover-fb:hover{
+		background-color: #1877f2 !important; 
+	}
+	.hover-git:hover{
+		background-color: #24292e !important;
+	}
+	.hover-tw:hover{
+		background-color: #1da1f2 !important;
+	}
+	.hover-line:hover{
+		background-color: #00bd00 !important;
+	}
+
+	@keyframes updown{
+		from{font-size: 10px}
+		to{font-size: 12px}
+	}
+	.fa-chevron-down:before {
+		font-size: 100px;
+		animation: updown .2s infinite alternate;
+		content: "\f078";
+	}
+	.btn-nav, .btn-visit:hover{
+		opacity: 0.8;
+	}
+	.underline{
+		text-decoration: underline;
+	}
+
+	.btn-nav, .btn-visit{
+		background: #ef6a4e !important;
+	}
+	.section-break{
+		width: 100%;
+		height: 1px;
+		background-color: hsl(5,100%,30%);
+	}
